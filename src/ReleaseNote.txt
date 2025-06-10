@@ -1,51 +1,11 @@
 Release Notes
 
-[V1.2.7]
-Date:   1/12/2024
-enhancement:
-	1. support SDX35 platform
-fix:
-
-[V1.2.6]
-Date:   5/25/2023
-enhancement:
-	1. support Linux 6.1
-fix:
-
-[V1.2.5]
-Date:   5/4/2023
-enhancement:
-	1. support Linux 5.19
-	2. NSS not effect on SPF12.x and support SFE on 9574
-fix:
-
-[V1.2.4]
-Date:   4/14/2023
-enhancement:
-	1. support SDX7X platform
-fix:
-
-[V1.2.3]
-Date:   9/20/2022
-enhancement:
-	1. support 9x07(pid 0x030E) platform
-fix:
-
-[V1.2.2]
-Date:   9/7/2022
-enhancement:
-	1. Optimization, the network card send queue wakeup is changed from callback to tasklet
-	2. Add the function of returning LAN packets in bridge mode
-	3. support ndo ioctl on kernel>5.14
-	4. Allow setting MTU greater than 1500
-fix:
-
 [V1.2.1]
 Date:   9/26/2021
 enhancement:
 	1. support IPQ5018's NSS
 	2. use 'qsdk/qca/src/data-kernel/drivers/rmnet-nss/rmnet_nss.c' instead myself rmnet_nss.c
-	   and qmi_wwan_q.ko must load after rmnet_nss.ko
+	   and pcie_mhi.ko must load after then rmnet_nss.ko
 fix:
 
 [V1.2.0.25]
